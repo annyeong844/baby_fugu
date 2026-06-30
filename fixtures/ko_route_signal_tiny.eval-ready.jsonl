@@ -1,0 +1,4 @@
+{"request_digest":"sha256:tiny01","label":"mini_ok","semantic_confidence":1.0,"vector":[1.0,0.0,0.0,0.0],"text":"비밀번호 재설정 조건은 본문에 모두 있어. 고객 안내문으로 바꿔줘."}
+{"request_digest":"sha256:tiny02","label":"strong_profile_required","semantic_confidence":1.0,"vector":[0.0,1.0,0.0,0.0],"text":"어제 정한 환불 예외만 표에 반영해줘."}
+{"request_digest":"sha256:tiny03","label":"inconclusive","semantic_confidence":1.0,"vector":[0.0,0.0,1.0,0.0],"text":"그 최종 문구만 바꿔줘. 후보가 둘이라는 말도 있어."}
+{"request_digest":"sha256:tiny04","label":"neither_profile_sufficient","semantic_confidence":1.0,"vector":[0.0,0.0,0.0,1.0],"text":"첨부한 PDF 세 개에서 충돌 조항만 뽑아줘. 첨부는 제공되지 않았다."}

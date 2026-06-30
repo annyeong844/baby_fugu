@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Local experiment outputs. Keep public repo small and safe.
+outputs/
+*.hidden_states*.jsonl
+*.predictions.jsonl
+*.route-runs*.jsonl
+*.counterfactual-evidence*.jsonl
+*.codex-replay*.jsonl
+
+# Credentials and local machine state.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Model caches and weights.
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.gguf
