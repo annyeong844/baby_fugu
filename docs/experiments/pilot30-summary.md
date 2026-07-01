@@ -29,11 +29,11 @@ public repository.
 
 ## Result
 
-```text
-deterministic / cheap baseline: 6/30  = 20.0%
-baby_fugu v6 one-head:          17/30 = 56.7%
-observed80 one-head:            18/30 = 60.0%
-```
+| Router | Correct | Accuracy |
+| --- | ---: | ---: |
+| deterministic / cheap baseline | 6 / 30 | 20.0% |
+| `baby_fugu` v6 one-head | 17 / 30 | 56.7% |
+| observed80 one-head | 18 / 30 | 60.0% |
 
 ## Interpretation
 
@@ -44,6 +44,18 @@ useful.
 The failure mode is also clear: `neither_profile_sufficient` was not learned.
 Rows where no route had enough information were usually over-routed as
 `strong_profile_required`.
+
+Observed80 per-label accuracy:
+
+| Label | Correct |
+| --- | ---: |
+| `mini_ok` | 9 / 10 |
+| `strong_profile_required` | 9 / 10 |
+| `inconclusive` | 0 / 1 |
+| `neither_profile_sufficient` | 0 / 9 |
+
+The current head is learning the cheap-vs-strong boundary, not the abstention
+boundary.
 
 ## Decision
 
